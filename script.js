@@ -24,3 +24,21 @@ $('.buttons button').on('click', function () {
         scrollTop: $(goToSection).offset().top
     })
 })
+
+$(function($) {
+    const $arrow = $('.fa-arrow-circle-up');
+    $(window).scroll(function(event) {
+        const $current = $(this).scrollTop();
+        if($current > 0) {
+            $arrow.addClass('active');
+        } else {
+            $arrow.removeClass('active');
+        }
+    })
+})
+
+$('.up-top-arrow').on('click', () => {
+    $('body, html').animate({
+        scrollTop: '0px'
+    })
+})

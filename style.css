@@ -216,5 +216,19 @@ button {
     left: 3vh;
 }
 
+.fa-arrow-circle-up {
+    opacity: 0;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    transition: .3s opacity;
+}
+
+.fa-arrow-circle-up.active {
+    opacity: 1;
+}
+
 
 /* Menu Section End */
