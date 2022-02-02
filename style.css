@@ -61,7 +61,7 @@ header .contact {
 header .contact-img {
     flex-basis: 90%;
     flex-direction: column;
-
+    align-items: center;
 }
 
 header .contact-img a {
@@ -71,7 +71,6 @@ header .contact-img a {
 }
 
 header .contact-img img {
-    left: 0;
     transform: translateX(0);
     margin-right: 5%;
     width: 4vh;
@@ -90,8 +89,6 @@ header .contact .cv-btn {
     margin-inline: auto;
     margin-top: 10%;
     justify-content: center;
-    filter: grayscale(1);
-    transition: .3s filter;
 }
 
 header .contact .cv-btn a {
@@ -103,7 +100,14 @@ header .contact .cv-btn a {
     /* border: 1px solid black; */
     border-radius: 20px;
     font-size: 12px;
+    filter: grayscale(1);
+    transition: .3s filter;
     /* box-shadow: 0 0 0px 10px 10px white; */
+}
+
+header .contact .cv-btn a:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
 }
 
 /* Header Section End */
@@ -190,6 +194,8 @@ header .contact .cv-btn a {
 .contact-img {
     display: flex;
     flex-basis: 45%;
+    align-items: center;
+    /* flex-direction: column; */
 }
 
 .contact-img a {
@@ -481,15 +487,13 @@ button {
         flex-direction: column;
     }
 
-    header .contact .cv-btn:hover,
-    header .contact-img img:hover,
-    .contact-img img:hover {
+    .contact-img a:hover img {
         filter: grayscale(0);
         transform: scale(1.2);
 
     }
 
-    header .contact-img:nth-of-type(3) img:hover {
+    header .contact-img:nth-of-type(3) a:hover img {
         box-shadow: 0 0 0 6px rgb(27, 182, 250);
         transform: scale(1);
     }
