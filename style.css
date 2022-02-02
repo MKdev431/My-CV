@@ -190,7 +190,7 @@ header .contact .cv-btn a:hover {
 
 .contact-img {
     display: flex;
-    flex-basis: 45%;
+    /* flex-basis: 45%; */
     align-items: center;
     /* flex-direction: column; */
 }
@@ -453,7 +453,8 @@ button {
     }
 
     .contact-img img {
-        width: 12%;
+        /* width: 12%; */
+        width: 88px;
     }
 
     header .contact-img img {
