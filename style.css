@@ -55,23 +55,20 @@ h4 {
 
 header .contact {
     order: -1;
-
+    align-content: space-between;
 }
 
 header .contact-img {
     flex-basis: 90%;
-    flex-direction: column;
     align-items: center;
 }
 
 header .contact-img a {
     flex-direction: row;
-    /* justify-content: space-between; */
     margin-bottom: 0;
 }
 
 header .contact-img img {
-    transform: translateX(0);
     margin-right: 5%;
     width: 4vh;
     height: 4vh;
@@ -466,10 +463,8 @@ button {
     }
 
     header .contact {
-        /* flex-direction: column; */
         flex-wrap: wrap;
         flex-basis: 50%;
-        /* justify-content: space-between; */
         flex-grow: 1;
     }
 
@@ -480,7 +475,7 @@ button {
     header .contact-img {
         flex-basis: 45%;
         flex-grow: 1;
-        /* align-content: center; */
+        flex-direction: column;
     }
 
     header .contact-img a {
