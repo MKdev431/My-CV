@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 /* Header Section */
 header,
 .about-wrapper,
@@ -13,7 +12,9 @@ header,
 .skills-wrapper,
 .education-wrapper,
 .languages-wrapper,
-.contact-wrapper {
+.contact-wrapper,
+.hobbies-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 10%;
@@ -42,6 +43,7 @@ p,
 span,
 a {
     color: #000;
+
 }
 
 h1 {
@@ -53,6 +55,8 @@ h2 {
     text-align: center;
     margin-bottom: 13%;
     border-bottom: 1px solid #000;
+    border-radius: 10%;
+    padding-bottom: 8px;
 }
 
 h3 {
@@ -214,6 +218,26 @@ header .contact .cv-btn a {
 
 /* Contact Section End */
 
+/* Hobbies Section */
+
+.hobbies-wrapper {
+    background-color: #c7c7c7;
+}
+
+.hobbies h3 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.hobbies p {
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px 5px rgb(136, 127, 127);
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+/* Hobbies Section End */
+
 /* Menu Section */
 .menu-mobile {
     justify-content: center;
@@ -325,6 +349,7 @@ button {
 
     h2 {
         font-size: 36px;
+        border-width: 2px;
     }
 
     h3 {
@@ -387,7 +412,7 @@ button {
     }
 
     h2 {
-        border-bottom: none;
+        /* border: none; */
     }
 
     h4 {
@@ -520,4 +545,6 @@ button {
         box-shadow: 0 0 0 6px rgb(27, 182, 250);
         transform: scale(1);
     }
+
+
 }
