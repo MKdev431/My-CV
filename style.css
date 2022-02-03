@@ -546,5 +546,16 @@ button {
         transform: scale(1);
     }
 
+    .hobbies h3 {
+        margin-bottom: 28px;
+    }
 
+    .hobbies p {
+        /* margin-bottom: 50px; */
+        box-shadow: 0 0 5px 5px rgb(136, 127, 127);
+        padding: 15px;
+        background-color: #fafafa;
+        width: 80%;
+        margin: 0 auto 100px;
+    }
 }
