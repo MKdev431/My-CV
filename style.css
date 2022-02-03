@@ -5,18 +5,20 @@
     box-sizing: border-box;
 }
 
+
 /* Header Section */
 header,
 .about-wrapper,
 .work-exp-wrapper,
 .skills-wrapper,
-.contact-wrapper,
 .education-wrapper,
-.languages-wrapper {
+.languages-wrapper,
+.contact-wrapper {
     display: flex;
     flex-direction: column;
     padding: 10%;
-    box-shadow: 0 0 5px 1px rgb(136, 127, 127);
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0 rgb(136, 127, 127);
 }
 
 header {
@@ -30,6 +32,16 @@ header img {
     height: 50%;
     border-radius: 50%;
     align-self: center;
+}
+
+h1,
+h2,
+h3,
+h5,
+p,
+span,
+a {
+    color: #000;
 }
 
 h1 {
@@ -50,7 +62,7 @@ h3 {
 h4 {
     margin-bottom: 2vh;
     font-size: 14px;
-    color: silver;
+    color: #ffffff;
 }
 
 header .contact {
@@ -89,17 +101,14 @@ header .contact .cv-btn {
 }
 
 header .contact .cv-btn a {
-    /* display: block; */
     color: #fff;
     text-decoration: none;
     padding: 4% 10%;
     background-color: rgb(79, 105, 223);
-    /* border: 1px solid black; */
     border-radius: 20px;
     font-size: 12px;
     filter: grayscale(1);
     transition: .3s filter;
-    /* box-shadow: 0 0 0px 10px 10px white; */
 }
 
 header .contact .cv-btn a:hover {
@@ -110,14 +119,24 @@ header .contact .cv-btn a:hover {
 /* Header Section End */
 
 /* About Section */
+.about-wrapper {
+    background-color: #c7c7c7;
+}
+
 /* About Section End */
 
 /* Work Experience Section */
 
+.work-exp-wrapper {
+    background-color: #c7c7c7;
+
+}
+
 .work-exp {
     margin-bottom: 10%;
-    box-shadow: 5px 5px 5px 1px rgb(136, 127, 127);
+    box-shadow: 4px 4px 5px 1px rgb(136, 127, 127);
     padding: 15%;
+    background-color: #fafafa;
 }
 
 /* Work Experience Section End */
@@ -137,17 +156,9 @@ header .contact .cv-btn a:hover {
     flex-basis: 100%;
 }
 
-.skills-wrapper {
-    box-shadow: none;
-}
-
 /* Skills Section End  */
 
 /* Education Section */
-.education-wrapper {
-    box-shadow: none;
-}
-
 .education {
     display: flex;
     flex-direction: column;
@@ -167,6 +178,7 @@ header .contact .cv-btn a:hover {
 /* Languages Section */
 .languages-wrapper {
     text-align: center;
+    background-color: #c7c7c7;
 }
 
 .languages h3 {
@@ -176,10 +188,6 @@ header .contact .cv-btn a:hover {
 /* Languages Section End */
 
 /* Contact Section */
-.contact-wrapper {
-    box-shadow: none;
-}
-
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +207,6 @@ header .contact .cv-btn a:hover {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000;
     flex-basis: 100%;
     margin-bottom: 8vh;
 }
@@ -314,6 +321,7 @@ button {
 }
 
 @media (min-width: 1024px) {
+    /* Tu jest problem -> ile dać min-width? */
 
     h1 {
         font-size: 45px;
@@ -364,14 +372,13 @@ button {
 @media (min-width: 1025px) {
 
     body {
-        background-color: cornflowerblue;
+        background-color: #757575;
     }
 
     .doc-wrapper {
         width: 80%;
         margin: 10% auto;
         box-shadow: 0 0 30px 0px black;
-        background-color: #fff;
     }
 
     .hamburger,
@@ -407,13 +414,14 @@ button {
         flex-basis: 50%;
         width: 50%;
         box-shadow: none;
-        border-right: 2px solid rgb(136, 127, 127);
+        /* border-right: 2px solid rgb(136, 127, 127); */
     }
 
     .work-exp-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-color: #fafafa;
     }
 
     .work-exp-wrapper h2 {
@@ -423,34 +431,46 @@ button {
     .work-exp {
         width: 45%;
         padding: 2%;
+        background-color: #c7c7c7;
     }
 
     .skills-wrapper {
         width: 50%;
         flex-direction: column;
+        background-color: #c7c7c7;
     }
 
     .about-skills-wrapper {
         display: flex;
-        box-shadow: 0 0 5px 1px rgb(136, 127, 127);
+    }
+
+    .about-wrapper,
+    .skills-wrapper {
+        box-shadow: 0 0 8px 0 rgb(136, 127, 127);
+    }
+
+    .education-wrapper {
+        /* border-right: 2px solid rgb(136, 127, 127); */
     }
 
     .education-languages-wrapper {
         display: flex;
+
     }
 
     .education-wrapper,
     .languages-wrapper {
         flex-direction: column;
         flex-basis: 50%;
-        box-shadow: none;
+        background-color: #c7c7c7;
+        box-shadow: 0 0 8px 0 rgb(136, 127, 127);
     }
 
 
     .contact-wrapper {
         flex-direction: column;
-        box-shadow: 0 0 5px 1px rgb(136, 127, 127);
     }
+
 
     .contact-img {
         flex-basis: auto;
