@@ -62,7 +62,7 @@ h3 {
 h4 {
     margin-bottom: 2vh;
     font-size: 14px;
-    color: #ffffff;
+    color: #919191;
 }
 
 header .contact {
@@ -392,6 +392,10 @@ button {
 
     h2 {
         border-bottom: none;
+    }
+
+    h4 {
+        color: #ffffff;
     }
 
     header,
