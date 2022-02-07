@@ -1,2 +1,190 @@
 @import "_reset";
-@import "_basic"
+@import "_basic";
+
+
+.page__header,
+.page__about,
+.page__skills,
+.page__work-experience,
+.page__education,
+.page__languages,
+.page__contact,
+.page__hobbies {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0 rgb(136, 127, 127);
+}
+
+// Header Section
+.page__header {
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header__image {
+        width: 40%;
+        height: 50%;
+        border-radius: 50%;
+        align-self: center;
+    }
+}
+
+.nav {
+    order: -1;
+    align-content: space-between;
+
+    .nav__item {
+        flex-basis: 90%;
+        align-items: center;
+
+        .nav__link {
+            flex-direction: row;
+            margin-bottom: 0;
+
+            .nav__image {
+                margin-right: 5%;
+                width: 4vh;
+                height: 4vh;
+                filter: grayscale(1);
+
+                .nav__text {
+                    font-size: 12px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .nav__cv-download-button {
+        display: flex;
+        flex-basis: 70%;
+        margin-inline: auto;
+        margin-top: 10%;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        padding: 4% 10%;
+        background-color: rgb(79, 105, 223);
+        border-radius: 20px;
+        font-size: 12px;
+        filter: grayscale(1);
+        transition: .3s filter;
+    }
+}
+
+// Header Section End
+
+// About Section
+.page__about {
+    background-color: #c7c7c7;
+}
+
+// About Section End
+
+// Skills Section
+.page__skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    .skills__list {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-basis: 100%;
+    }
+}
+
+// Skills Section End
+
+// Work Experience Section
+.page__work-experience {
+    background-color: #c7c7c7;
+
+    .work-experience__article {
+        margin-bottom: 10%;
+        box-shadow: 4px 4px 5px 1px rgb(136, 127, 127);
+        padding: 15%;
+        background-color: #fafafa;
+    }
+}
+
+// Work Experience Section End
+
+// Education Section
+.page__education {
+    display: flex;
+    flex-direction: column;
+
+    .education__school {
+        margin-bottom: 8vh;
+        text-align: center;
+    }
+
+    .education__school--last {
+        margin-bottom: 0;
+    }
+}
+
+// Education Section End
+
+// Languages section
+.page__languages {
+    text-align: center;
+    background-color: #c7c7c7;
+}
+
+// Languages section End
+
+// Contact Section
+.page__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+
+    .nav__item {
+        display: flex;
+        flex-basis: 45%;
+        align-items: center;
+
+        .nav__link {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 8vh;
+
+            .nav__image {
+                width: 30%;
+                align-self: center;
+            }
+        }
+    }
+}
+
+// Contact Section End
+
+// Hobbies Section
+.page__hobbies {
+    background-color: #c7c7c7;
+
+    .article__name {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .article__text {
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px 5px rgb(136, 127, 127);
+        padding: 15px;
+        background-color: #fafafa;
+    }
+}
+
+// Hobbies Section End
