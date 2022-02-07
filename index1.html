@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michał CV - BEM/SASS</title>
+    <title>Michał CV - BEM+SASS</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -13,30 +13,28 @@
     <header data-section="menu-mobile__button--header" class="header page__header">
         <img src="img/Magda+i+Michał0001[1].JPG" alt="Michał Kurek zdjęcie" class="header__image">
         <h1 class="header__name-surname">Michał Kurek</h1>
-        <div class="header__contact-upper-wrapper">
-            <nav class="contact header__contact">
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a href="tel:+48503060624" class="contact__link"><img src="img/icons8-phone-48.png" alt="numer telefonu" class="contact__image"><span class="contact__text">503 060 624</span></img></a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="mailto:michal@kurek.pl" class="contact__link"><img src="img/icons8-mail-48.png" alt="adres email" class="contact__image"><span class="contact__text">michal@kurek.pl</span></img></a>
-                    </li>
-                    <li class="contact_item contact__item--github">
-                        <a href="https://github.com/MKdev431" class="contact__link"><img src="img/icons8-github-50.png" alt="adres github" class="contact__image contact__image--github"><span class="contact__text">MKdev431</span></img></a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="https://linkedin.com/in/mkdev431" class="contact__link"><img src="img/icons8-linkedin-48.png" alt="adres linkedin" class="contact__image"><span class="contact__text">MKdev431</span></img></a>
-                    </li>
-                </ul>
-                <a href="#" class="contact__button"></a>
-            </nav>
-        </div>
+        <nav class="contact header__contact">
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a href="tel:+48503060624" class="contact__link"><img src="img/icons8-phone-48.png" alt="numer telefonu" class="contact__image"><span class="text contact__text">503 060 624</span></img></a>
+                </li>
+                <li class="contact__item">
+                    <a href="mailto:michal@kurek.pl" class="contact__link"><img src="img/icons8-mail-48.png" alt="adres email" class="contact__image"><span class="text contact__text">michal@kurek.pl</span></img></a>
+                </li>
+                <li class="contact_item contact__item--github">
+                    <a href="https://github.com/MKdev431" class="contact__link"><img src="img/icons8-github-50.png" alt="adres github" class="contact__image contact__image--github"><span class="text contact__text">MKdev431</span></img></a>
+                </li>
+                <li class="contact__item">
+                    <a href="https://linkedin.com/in/mkdev431" class="contact__link"><img src="img/icons8-linkedin-48.png" alt="adres linkedin" class="contact__image"><span class="text contact__text">MKdev431</span></img></a>
+                </li>
+            </ul>
+            <a href="#" class="contact__download-button">Pobierz CV</a>
+        </nav>
     </header>
     <section class="about page__about">
         <h2 class="about__title section-title">O mnie</h2>
         <article class="article about__article">
-            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod, officiis,
+            <p class="text article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod, officiis,
                 repellendus quo
                 dicta,
                 corporis nihil et numquam animi assumenda facere? Atque repellendus rem earum nulla commodi, at
@@ -50,131 +48,133 @@
         <h2 class="skills__title section-title">Umiejętności</h2>
         <ul class="skills__list">
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
             <li class="skills__item">
-                <p class="skills_text">Lorem ipsum dolor</p>
+                <p class="text skills__text">Lorem ipsum dolor</p>
             </li>
         </ul>
     </section>
     <section data-section="menu-mobile__button--experience" class="work-experience page__work-experience">
         <h2 class="work-experience__title section-title">Doświadczenie</h2>
         <article class="article work-experience__article">
-            <h3 class="article__name">Właściciel Firmy - Trener Motocyklowy</h3>
-            <h4 class="article__subname">2018-2021 - KUREK Motorsport</h4>
-            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet! Dolores
+            <h3 class="name article__name">Właściciel Firmy - Trener Motocyklowy</h3>
+            <h4 class="subname article__subname">2018-2021 - KUREK Motorsport</h4>
+            <p class="text article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet!
+                Dolores
                 voluptatem temporibus nam sit consequatur modi et aliquid aspernatur!</p>
         </article>
         <article class="article work-experience__article">
-            <h3 class="article__name">Pracownik Wielozadaniowy</h3>
-            <h4 class="article__subname">2015-2018 - "KUREK" Szymon Kurek</h4>
-            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet! Dolores
+            <h3 class="name article__name">Pracownik Wielozadaniowy</h3>
+            <h4 class="subname article__subname">2015-2018 - "KUREK" Szymon Kurek</h4>
+            <p class="text article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet!
+                Dolores
                 voluptatem temporibus nam sit consequatur modi et aliquid aspernatur!</p>
         </article>
     </section>
     <section class="education page__education">
         <h2 class="education__title section-title">Wykształcenie</h2>
         <div class="education__school">
-            <h3 class="education__name">Kopaliński Bilingual High School</h3>
-            <h4 class="education__subname">2011-2014</h4>
-            <h5 class="education__text"></h5>
+            <h3 class="name education__name">Kopaliński Bilingual High School</h3>
+            <h4 class="subname education__subname">2011-2014</h4>
+            <h5 class="text education__text"></h5>
         </div>
         <div class="education__school">
-            <h3 class="education__name">Kursy - Front-End Developer Basic, Advanced, JS, Git</h3>
-            <h4 class="education__subname">2021-2022</h4>
-            <h5 class="education__text">Udemy Online</h5>
+            <h3 class="name education__name">Kursy - Front-End Developer Basic, Advanced, JS, Git</h3>
+            <h4 class="subname education__subname">2021-2022</h4>
+            <h5 class="text education__text">Udemy Online</h5>
         </div>
         <div class="education__school">
-            <h3 class="education__name">Kursy - Python Basic, Advanced</h3>
-            <h4 class="education__subname">2021-2022</h4>
-            <h5 class="education__text">Udemy Online</h5>
+            <h3 class="name education__name">Kursy - Python Basic, Advanced</h3>
+            <h4 class="subname education__subname">2021-2022</h4>
+            <h5 class="text education__text">Udemy Online</h5>
         </div>
     </section>
     <section class="languages page__languages">
         <h2 class="languages__title section-title">Języki</h2>
         <ul class="languages__list">
             <li class="languages__item">
-                <p class="languages__text">Polski</p>
+                <p class="text languages__text">Polski</p>
             </li>
             <li class="languages__item">
-                <p class="languages__text">Angielski - Płynny</p>
+                <p class="text languages__text">Angielski - Płynny</p>
             </li>
             <li class="languages__item">
-                <p class="languages__text">Japoński - Podstawowy</p>
+                <p class="text languages__text">Japoński - Podstawowy</p>
             </li>
         </ul>
     </section>
     <section data-section="menu-mobile__button--contact" class="contact page__contact">
         <h2 class="contact__title section-title">Contact</h2>
-        <div class="contact__contact-lower-wrapper">
-            <nav class="contact contact__contact">
-                <!-- Wiem, że nazwa specyficzna, ale chciałem mieć zarówno blok
+        <nav class="contact contact__contact">
+            <!-- Wiem, że nazwa specyficzna, ale chciałem mieć zarówno blok
                 "contact" jak i nawiązanie do bloku sekcji "contact" tak jak u góry mam do "header". Może tak być?  -->
 
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a href="tel:+48503060624" class="contact__link"><img src="img/icons8-phone-48.png" alt="numer telefonu" class="contact__image"><span class="contact__text">503 060 624</span></img></a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="mailto:michal@kurek.pl" class="contact__link"><img src="img/icons8-mail-48.png" alt="adres email" class="contact__image"><span class="contact__text">michal@kurek.pl</span></img></a>
-                    </li>
-                    <li class="contact_item contact__item--github">
-                        <a href="https://github.com/MKdev431" class="contact__link"><img src="img/icons8-github-50.png" alt="adres github" class="contact__image contact__image--github"><span class="contact__text">MKdev431</span></img></a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="https://linkedin.com/in/mkdev431" class="contact__link"><img src="img/icons8-linkedin-48.png" alt="adres linkedin" class="contact__image"><span class="contact__text">MKdev431</span></img></a>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a href="tel:+48503060624" class="contact__link"><img src="img/icons8-phone-48.png" alt="numer telefonu" class="contact__image"><span class="text contact__text">503 060 624</span></img></a>
+                </li>
+                <li class="contact__item">
+                    <a href="mailto:michal@kurek.pl" class="contact__link"><img src="img/icons8-mail-48.png" alt="adres email" class="contact__image"><span class="text contact__text">michal@kurek.pl</span></img></a>
+                </li>
+                <li class="contact_item contact__item--github">
+                    <a href="https://github.com/MKdev431" class="contact__link"><img src="img/icons8-github-50.png" alt="adres github" class="contact__image contact__image--github"><span class="text contact__text">MKdev431</span></img></a>
+                </li>
+                <li class="contact__item">
+                    <a href="https://linkedin.com/in/mkdev431" class="contact__link"><img src="img/icons8-linkedin-48.png" alt="adres linkedin" class="contact__image"><span class="text contact__text">MKdev431</span></img></a>
+                </li>
+            </ul>
+        </nav>
     </section>
     <section class="hobbies page__hobbies">
         <h2 class="hobbies__title section-title">Po pracy...</h2>
         <article class="article hobbies__article">
-            <h3 class="article__name">Motorsport - Motocykle, samochody</h3>
-            <p class="article__text">Pasja, która towarzyszy mi od początku - Ściganie się po rozmaitych torach
+            <h3 class="name article__name">Motorsport - Motocykle, samochody</h3>
+            <p class="text article__text">Pasja, która towarzyszy mi od początku - Ściganie się po rozmaitych torach
                 wyścigowych nauczyło
                 mnie wytrwałości, cierpliwości, szacunku, odpowiedzialności, skrupulatności, oraz uciechy z
                 każdego sukcesu, a także pragnienia rozwoju, które teraz chcę przenieść do mojej nowej zajawki,
                 jaką stało się IT.</p>
             <article class="article hobbies__article">
-                <h3 class="article__name">Siłownia</h3>
-                <p class="article__text">Kolejna pasja, która służy mi do budowania kondycji. <br>
+                <h3 class="name article__name">Siłownia</h3>
+                <p class="text article__text">Kolejna pasja, która służy mi do budowania kondycji. <br>
                     Etap Dźwigania jak największych ciężarów mam
                     już za sobą - Teraz przy pomocy trenera personalnego ćwiczę motorykę - rozciąganie się, refleks,
                     stabilność, podzielność uwagi, utrzymanie wagi ciała - są mi niezbędne.</p>
                 <article class="article hobbies__article">
-                    <h3 class="article__name">Jazda na rowerze</h3>
-                    <p class="article__text">Niedawno do moich "suplementów treningowych" dołączyła jazda na rowerze -
+                    <h3 class="name article__name">Jazda na rowerze</h3>
+                    <p class="text article__text">Niedawno do moich "suplementów treningowych" dołączyła jazda na
+                        rowerze -
                         Dotychczas nie
                         spodziewałem się, że dojazd choćby do sąsiedniego miasta może sprawić tyle radości, satysfakcji
                         i jeszcze przy tym budować ciało. :)</p>
                     <article class="article hobbies__article">
-                        <h3 class="article__name">Snowboarding</h3>
-                        <p class="article__text">Od kilku lat spełniam swoje kolejne marzenie - Od zawsze chciałem
+                        <h3 class="name article__name">Snowboarding</h3>
+                        <p class="text article__text">Od kilku lat spełniam swoje kolejne marzenie - Od zawsze chciałem
                             spróbować jazdy na desce
                             snowboardowej - Teraz nie wyobrażam sobie zimy bez szusowania po stokach - Widoki
                             przepięknych
