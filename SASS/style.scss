@@ -1,6 +1,9 @@
 @import "_reset";
 @import "_basic";
 
+.page {
+    background-color: #fafafa;
+}
 
 .page__header,
 .page__about,
@@ -13,102 +16,101 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 10%;
-    background-color: #fafafa;
+    padding: 8%;
     box-shadow: 0 0 8px 0 rgb(136, 127, 127);
 }
 
 // Header Section
-.page__header {
-    box-shadow: none;
+.header {
+    // box-shadow: none;
     flex-direction: row;
     justify-content: space-between;
 
-    .header__image {
+    &__image {
         width: 40%;
         height: 50%;
         border-radius: 50%;
         align-self: center;
+        order: 1;
     }
-}
 
-.nav {
-    order: -1;
-    align-content: space-between;
+    .header__nav {
+        display: flex;
+        flex-direction: column;
 
-    .nav__item {
-        flex-basis: 90%;
-        align-items: center;
+        .nav {
 
-        .nav__link {
-            flex-direction: row;
-            margin-bottom: 0;
+            &__list {
+                list-style: none;
+            }
 
-            .nav__image {
-                margin-right: 5%;
+            &__link {
+                display: flex;
+                text-decoration: none;
+            }
+
+            &__image {
+                margin-right: 8px;
                 width: 4vh;
                 height: 4vh;
                 filter: grayscale(1);
+            }
 
-                .nav__text {
-                    font-size: 12px;
-                    align-self: center;
-                }
+            &__text {
+                align-self: center;
+            }
+
+            &__cv-download-button {
+                margin-inline: auto;
+                margin-top: 16px;
+                color: #fff;
+                text-decoration: none;
+                padding: 8px 16px;
+                background-color: rgb(79, 105, 223);
+                border-radius: 20px;
+                font-size: 12px;
+                filter: grayscale(1);
+                transition: 0.3s filter;
             }
         }
-    }
-
-    .nav__cv-download-button {
-        display: flex;
-        flex-basis: 70%;
-        margin-inline: auto;
-        margin-top: 10%;
-        justify-content: center;
-        color: #fff;
-        text-decoration: none;
-        padding: 4% 10%;
-        background-color: rgb(79, 105, 223);
-        border-radius: 20px;
-        font-size: 12px;
-        filter: grayscale(1);
-        transition: .3s filter;
     }
 }
 
 // Header Section End
 
 // About Section
-.page__about {
+.about {
     background-color: #c7c7c7;
 }
 
 // About Section End
 
 // Skills Section
-.page__skills {
+.skills {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: none;
 
-    .skills__list {
+    &__list {
         display: flex;
-        align-content: space-between;
+        // align-content: space-between;
         justify-content: space-around;
         flex-wrap: wrap;
         list-style: none;
-        flex-basis: 100%;
+        // flex-basis: 100%;
     }
 }
 
 // Skills Section End
 
 // Work Experience Section
-.page__work-experience {
+.work-experience {
     background-color: #c7c7c7;
 
-    .work-experience__article {
-        margin-bottom: 10%;
+    &__article {
+        margin-bottom: 30px;
         box-shadow: 4px 4px 5px 1px rgb(136, 127, 127);
-        padding: 15%;
+        padding: 30px;
         background-color: #fafafa;
     }
 }
@@ -116,16 +118,17 @@
 // Work Experience Section End
 
 // Education Section
-.page__education {
+.education {
     display: flex;
     flex-direction: column;
+    box-shadow: none;
 
-    .education__school {
+    &__school {
         margin-bottom: 8vh;
         text-align: center;
     }
 
-    .education__school--last {
+    &__school--last {
         margin-bottom: 0;
     }
 }
@@ -133,37 +136,57 @@
 // Education Section End
 
 // Languages section
-.page__languages {
-    text-align: center;
+.languages {
     background-color: #c7c7c7;
+    text-align: center;
+
+
+
+    &__list {
+        list-style: none;
+    }
 }
 
 // Languages section End
 
 // Contact Section
-.page__contact {
+.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
+    box-shadow: none;
 
-    .nav__item {
-        display: flex;
-        flex-basis: 45%;
-        align-items: center;
+    .nav {
 
-        .nav__link {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        &__item {
+            display: flex;
+            flex-basis: 50%;
+            justify-content: center;
+            align-content: center;
+
+            &--github {
+                flex-grow: 1;
+            }
+        }
+
+        &__link {
             display: flex;
             flex-direction: column;
             text-decoration: none;
-            flex-basis: 100%;
             margin-bottom: 8vh;
+        }
 
-            .nav__image {
-                width: 30%;
-                align-self: center;
-            }
+        &__image {
+            width: 6vh;
+            align-self: center;
         }
     }
 }
@@ -171,19 +194,21 @@
 // Contact Section End
 
 // Hobbies Section
-.page__hobbies {
+.hobbies {
     background-color: #c7c7c7;
 
-    .article__name {
-        text-align: center;
-        margin-bottom: 16px;
-    }
+    .article {
+        &__name {
+            text-align: center;
+            margin-bottom: 16px;
+        }
 
-    .article__text {
-        margin-bottom: 50px;
-        box-shadow: 0 0 5px 5px rgb(136, 127, 127);
-        padding: 15px;
-        background-color: #fafafa;
+        &__text {
+            margin-bottom: 50px;
+            box-shadow: 0 0 5px 5px rgb(136, 127, 127);
+            padding: 18px;
+            background-color: #fafafa;
+        }
     }
 }
 
