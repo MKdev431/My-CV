@@ -22,7 +22,7 @@
 
 .title-h2 {
   text-align: center;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #000;
   border-radius: 10%;
   padding-bottom: 8px;
@@ -94,10 +94,12 @@
   }
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1025px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .page__header,
@@ -409,7 +411,7 @@
 }
 
 .education__school {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -425,6 +427,10 @@
     -webkit-box-shadow: 0 0 8px 0 #887f7f;
             box-shadow: 0 0 8px 0 #887f7f;
   }
+  .education__school {
+    margin-bottom: 80px;
+    text-align: center;
+  }
 }
 
 .languages {
@@ -436,14 +442,13 @@
   list-style: none;
 }
 
-.languages__text {
-  font-size: 28px;
-}
-
 @media (min-width: 1025px) {
   .languages {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .languages__text {
+    font-size: 28px;
   }
 }
 
@@ -460,6 +465,12 @@
   text-align: center;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.contact .nav {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact .nav__list {
@@ -499,7 +510,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none;
-  margin-bottom: 52px;
+  margin-bottom: 45px;
 }
 
 .contact .nav__image {
@@ -525,9 +536,6 @@
 }
 
 @media (min-width: 1025px) {
-  .contact .nav {
-    width: 100%;
-  }
   .contact .nav__item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
