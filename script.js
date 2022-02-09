@@ -1,8 +1,8 @@
-const btn = document.querySelectorAll('button');
+const btn = document.querySelectorAll('.menu-mobile__button');
 const burger = document.querySelector('.hamburger');
 const arrow = document.querySelector('.fa-arrow-right');
 const bars = document.querySelector('.fa-bars');
-const menu = document.querySelector('nav');
+const menu = document.querySelector('.menu-mobile');
 
 burger.addEventListener('click', () => {
     bars.classList.toggle('active')
@@ -18,10 +18,10 @@ btn.forEach((item) => {
     })
 })
 
-$('.buttons button').on('click', function () {
-    const goToSection = '[data-section=' + $(this).attr('class') + ']';
+$('.menu-mobile__button').on('click', function () {
+    const $goToSection = '[data-section=' + $(this).attr('data-section') + ']';
     $('body, html').animate({
-        scrollTop: $(goToSection).offset().top
+        scrollTop: $($goToSection).offset().top
     })
 })
 

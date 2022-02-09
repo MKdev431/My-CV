@@ -13,7 +13,7 @@
 
 <body class="page">
 
-    <header data-section="menu-mobile__button--header" class="header page__header">
+    <header data-section="header" class="header page__header">
         <img src="img/Magda+i+Michał0001[1].JPG" alt="Michał Kurek zdjęcie" class="header__image">
         <nav class="nav header__nav">
             <h1 class="header__name-surname">Michał Kurek</h1>
@@ -50,7 +50,7 @@
         </article>
     </section>
 
-    <section data-section="menu-mobile__button--skills" class="skills page__skills">
+    <section data-section="skills" class="skills page__skills">
         <h2 class="skills__title | title-h2">Umiejętności</h2>
         <ul class="skills__list">
             <li class="skills__item">
@@ -86,7 +86,7 @@
         </ul>
     </section>
 
-    <section data-section="menu-mobile__button--experience" class="work-experience page__work-experience">
+    <section data-section="work-experience" class="work-experience page__work-experience">
         <h2 class="work-experience__title | title-h2">Doświadczenie</h2>
         <article class="article work-experience__article">
             <h3 class="article__name | name-h3">Właściciel Firmy - Trener Motocyklowy</h3>
@@ -138,7 +138,7 @@
         </ul>
     </section>
 
-    <section data-section="menu-mobile__button--contact" class="contact page__contact">
+    <section data-section="contact" class="contact page__contact">
         <h2 class="contact__title | title-h2">Contact</h2>
         <nav class="nav contact__nav">
             <ul class="nav__list">
@@ -167,37 +167,43 @@
                 mnie wytrwałości, cierpliwości, szacunku, odpowiedzialności, skrupulatności, oraz uciechy z
                 każdego sukcesu, a także pragnienia rozwoju, które teraz chcę przenieść do mojej nowej zajawki,
                 jaką stało się IT.</p>
-            <article class="article hobbies__article">
-                <h3 class="article__name | name-h3">Siłownia</h3>
-                <p class="article__text | text">Kolejna pasja, która służy mi do budowania kondycji. <br>
-                    Etap Dźwigania jak największych ciężarów mam
-                    już za sobą - Teraz przy pomocy trenera personalnego ćwiczę motorykę - rozciąganie się, refleks,
-                    stabilność, podzielność uwagi, utrzymanie wagi ciała - są mi niezbędne.</p>
-                <article class="article hobbies__article">
-                    <h3 class="article__name | name-h3">Jazda na rowerze</h3>
-                    <p class="article__text | text">Niedawno do moich "suplementów treningowych" dołączyła jazda na
-                        rowerze -
-                        Dotychczas nie
-                        spodziewałem się, że dojazd choćby do sąsiedniego miasta może sprawić tyle radości, satysfakcji
-                        i jeszcze przy tym budować ciało. :)</p>
-                    <article class="article hobbies__article">
-                        <h3 class="article__name | name-h3">Snowboarding</h3>
-                        <p class="article__text | text">Od kilku lat spełniam swoje kolejne marzenie - Od zawsze
-                            chciałem
-                            spróbować jazdy na desce
-                            snowboardowej - Teraz nie wyobrażam sobie zimy bez szusowania po stokach - Widoki
-                            przepięknych
-                            gór jak np. Włoskie Alpy, to nie tylko piękne wspomnienia, ale także odpoczynek -
-                            odskocznia,
-                            która w tych szybkich czasach jest tak bardzo ważna...</p>
+        </article>
+        <article class="article hobbies__article">
+            <h3 class="article__name | name-h3">Siłownia</h3>
+            <p class="article__text | text">Kolejna pasja, która służy mi do budowania kondycji. <br>
+                Etap Dźwigania jak największych ciężarów mam
+                już za sobą - Teraz przy pomocy trenera personalnego ćwiczę motorykę - rozciąganie się, refleks,
+                stabilność, podzielność uwagi, utrzymanie wagi ciała - są mi niezbędne.</p>
+        </article>
+        <article class="article hobbies__article">
+            <h3 class="article__name | name-h3">Jazda na rowerze</h3>
+            <p class="article__text | text">Niedawno do moich "suplementów treningowych" dołączyła jazda na
+                rowerze -
+                Dotychczas nie
+                spodziewałem się, że dojazd choćby do sąsiedniego miasta może sprawić tyle radości, satysfakcji
+                i jeszcze przy tym budować ciało. :)</p>
+        </article>
+        <article class="article hobbies__article">
+            <h3 class="article__name | name-h3">Snowboarding</h3>
+            <p class="article__text | text">Od kilku lat spełniam swoje kolejne marzenie - Od zawsze
+                chciałem
+                spróbować jazdy na desce
+                snowboardowej - Teraz nie wyobrażam sobie zimy bez szusowania po stokach - Widoki
+                przepięknych
+                gór jak np. Włoskie Alpy, to nie tylko piękne wspomnienia, ale także odpoczynek -
+                odskocznia,
+                która w tych szybkich czasach jest tak bardzo ważna...</p>
+        </article>
     </section>
 
     <nav class="menu-mobile">
         <ul class="menu-mobile__button-list">
-            <button class="menu-mobile__button menu-mobile__button--header"></button>
-            <button class="menu-mobile__button menu-mobile__button--skills"></button>
-            <button class="menu-mobile__button menu-mobile__button--experience"></button>
-            <button class="menu-mobile__button menu-mobile__button--contact"></button>
+            <button data-section="header" class="menu-mobile__button menu-mobile__button--header">Strona Główna - O
+                mnie</button>
+            <button data-section="skills" class="menu-mobile__button menu-mobile__button--skills">Umiejętności</button>
+            <button data-section="work-experience"
+                class="menu-mobile__button menu-mobile__button--experience">Doświadczenie</button>
+            <button data-section="contact" class="menu-mobile__button menu-mobile__button--contact">Kontakt</button>
         </ul>
         <div class="hamburger menu-mobile__hamburger">
             <i class="hamburger__fas fas fa-bars active"></i>
@@ -209,7 +215,7 @@
     </nav>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
