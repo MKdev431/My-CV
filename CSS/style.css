@@ -19,23 +19,23 @@ a {
 
 h1 {
   font-size: 28px;
-  margin-bottom: 5%;
+  margin-bottom: 8px;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 13%;
+  margin-bottom: 38px;
   border-bottom: 1px solid #000;
   border-radius: 10%;
   padding-bottom: 8px;
 }
 
 h3 {
-  margin-bottom: 1vh;
+  margin-bottom: 6px;
 }
 
 h4 {
-  margin-bottom: 2vh;
+  margin-bottom: 14px;
   font-size: 14px;
   color: #919191;
 }
@@ -60,7 +60,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 8%;
+  padding: 28px;
   -webkit-box-shadow: 0 0 8px 0 #887f7f;
           box-shadow: 0 0 8px 0 #887f7f;
 }
@@ -189,7 +189,7 @@ h4 {
 }
 
 .education__school {
-  margin-bottom: 8vh;
+  margin-bottom: 52px;
   text-align: center;
 }
 
@@ -258,11 +258,12 @@ h4 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none;
-  margin-bottom: 8vh;
+  margin-bottom: 52px;
 }
 
 .contact .nav__image {
   width: 6vh;
+  height: 6vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -294,7 +295,7 @@ h4 {
   position: fixed;
   top: 0;
   right: 0;
-  width: 0;
+  width: 70%;
   height: 100%;
   background-color: #000;
   -webkit-transition: .3s;
@@ -325,7 +326,7 @@ h4 {
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
-  padding: 5% 5%;
+  padding: 12px 8px;
   font-size: 15px;
 }
 
