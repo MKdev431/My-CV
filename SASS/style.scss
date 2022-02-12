@@ -47,7 +47,7 @@
 // Header Section
 .header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     &__image {
         width: 40%;
@@ -55,6 +55,51 @@
         border-radius: 50%;
         align-self: center;
         order: 1;
+    }
+
+    &__language-button {
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+
+        @media(min-width: 1025px) {
+            &:hover .header__language-image {
+                width: 50px;
+            }
+        }
+    }
+
+    &__language-image {
+        width: 20px;
+        box-shadow: 0 0 0 1px #000;
+        padding: 1px;
+        border-radius: 50%;
+
+        @media(min-width: 500px) {
+            width: 23px;
+        }
+
+        @media(min-width: 1025px) {
+            width: 35px;
+        }
+
+
+    }
+
+    &__language-text {
+        display: block;
+        font-size: 8px;
+
+        @media(min-width: 540px) {
+            font-size: 12px;
+        }
+
+        @media(min-width: 1025px) {
+            font-size: 30px;
+        }
     }
 
     .header__nav {
