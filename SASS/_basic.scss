@@ -29,7 +29,6 @@
 }
 
 @media (min-width: 1024px) {
-    /* Tu jest problem -> ile dać min-width? */
 
     .header__name-surname {
         font-size: 45px;
@@ -54,6 +53,7 @@
 }
 
 @media(min-width: 1025px) {
+
     .header__name-surname {
         font-size: 55px;
     }

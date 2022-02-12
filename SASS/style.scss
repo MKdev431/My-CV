@@ -36,7 +36,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 28px;
+    padding: 32px;
     box-shadow: 0 0 8px 0 rgb(136, 127, 127);
 
     @media(min-width: 1025px) {
@@ -74,19 +74,19 @@
 
             &__image {
                 margin-right: 8px;
-                width: 4vh;
-                height: 4vh;
+                width: 25px;
+                height: 25px;
                 filter: grayscale(1);
                 transition: .3s;
 
                 @media(min-width: 533px) {
-                    width: 8vh;
-                    height: 8vh;
+                    width: 29px;
+                    height: 29px;
                 }
 
                 @media(min-width: 1024px) {
-                    width: 4vh;
-                    height: 4vh;
+                    width: 55px;
+                    height: 55px;
                 }
             }
 
@@ -170,8 +170,8 @@
                 }
 
                 &__image {
-                    height: 7vh;
-                    width: 7vh;
+                    height: 86px;
+                    width: 86px;
                     margin: 0;
                 }
 
@@ -209,11 +209,30 @@
     flex-wrap: wrap;
     box-shadow: none;
 
+    &__container {
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
     &__list {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        list-style: none;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        border-bottom: 1px solid #000;
+        border-radius: 10%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        text-align: left;
     }
 
     @media(min-width: 1025px) {
@@ -284,8 +303,10 @@
     background-color: #c7c7c7;
     text-align: center;
 
+
     &__list {
         list-style: none;
+
     }
 
     @media(min-width: 1025px) {
@@ -297,7 +318,7 @@
     }
 }
 
-// Languages section End
+// Languages section EndNeubrandenburg
 
 // Contact Section
 .contact {
@@ -308,9 +329,14 @@
     text-align: center;
     box-shadow: none;
 
+    @media(min-width: 1025px) {
+        &__title {
+            margin-bottom: 100px;
+        }
+    }
+
     .nav {
         width: 100%;
-        flex-wrap: wrap;
 
         &__list {
             display: flex;
@@ -319,10 +345,7 @@
         }
 
         &__item {
-            display: flex;
             flex-basis: 50%;
-            justify-content: center;
-            align-content: center;
 
             &--github {
                 flex-grow: 1;
@@ -337,27 +360,21 @@
         }
 
         &__image {
-            width: 6vh;
-            height: 6vh;
+            width: 38px;
+            height: 38px;
             align-self: center;
 
-            @media(min-width: 533px) {
-                width: 10vh;
-                height: 10vh;
-            }
-
             @media(min-width: 1024px) {
-                width: 6vh;
-                height: 6vh;
+                width: 74px;
+                height: 74px;
             }
         }
 
 
         @media(min-width: 1025px) {
 
-            &__item {
-                flex-basis: 25%;
-
+            &__list {
+                margin-bottom: 50px;
             }
 
             &__image {
@@ -365,7 +382,6 @@
             }
 
             &__link {
-                margin: 100px;
 
                 &:hover .nav__image {
                     transform: scale(1.2);
@@ -377,6 +393,17 @@
                     border-radius: 50%;
                     transform: scale(1);
                 }
+            }
+        }
+
+        @media(min-width: 1130px) {
+
+            &__list {
+                flex-wrap: nowrap;
+            }
+
+            &__item {
+                flex-basis: 25%;
             }
         }
     }
