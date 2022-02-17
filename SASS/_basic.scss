@@ -11,11 +11,11 @@
 }
 
 .title-h2 {
-    text-align: center;
     margin-bottom: 25px;
     border-bottom: 1px solid #000;
     border-radius: 10%;
     padding-bottom: 8px;
+    text-align: center;
 }
 
 .name-h3 {
@@ -28,41 +28,114 @@
     color: #919191;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
+    .header__name-surname {
+        font-size: 30px;
+    }
+
+    .title-h2 {
+        border-width: 2px;
+        font-size: 22px;
+    }
+
+    .name-h3 {
+        font-size: 18px;
+    }
+
+    .subname-h4 {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__name-surname {
+        font-size: 32px;
+    }
+
+    .title-h2 {
+        border-width: 2px;
+        font-size: 28px;
+    }
+
+    .name-h3 {
+        font-size: 21px;
+    }
+
+    .subname-h4 {
+        font-size: 19px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+
+@media(min-width: 1024px) {
+    .title-h2 {
+        margin-bottom: 50px;
+        font-size: 22px;
+    }
+
+    .name-h3 {
+        font-size: 18px;
+    }
+
+    .subname-h4 {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1440px) {
 
     .header__name-surname {
-        font-size: 45px;
+        font-size: 40px;
+    }
+
+    .title-h2 {
+        font-size: 28px;
+    }
+
+    .name-h3 {
+        font-size: 22px;
+    }
+
+    .subname-h4 {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .header__name-surname {
+        font-size: 58px;
     }
 
     .title-h2 {
         font-size: 36px;
-        border-width: 2px;
     }
 
     .name-h3 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .subname-h4 {
-        font-size: 21px;
+        font-size: 23px;
     }
 
     .text {
-        font-size: 24px;
-    }
-}
-
-@media(min-width: 1025px) {
-
-    .header__name-surname {
-        font-size: 55px;
-    }
-
-    .subname-h4 {
-        color: #fff;
-    }
-
-    .title-h2 {
-        margin-bottom: 50px;
+        font-size: 22px;
     }
 }
